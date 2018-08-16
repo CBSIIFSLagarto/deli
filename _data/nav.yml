@@ -1,0 +1,28 @@
+menu:
+  - title: Home
+    url: index.html
+  - title: Blog
+    url: pages/blog.html
+  - title: Layouts
+    url:
+    dropdown:
+      - title: Left Sidebar
+        url: pages/left-sidebar.html
+      - title: Right Sidebar
+        url: pages/right-sidebar.html
+      - title: No Sidebar
+        url: pages/no-sidebar.html
+      - title: Submenu
+        url:
+        dropdown:
+          - title: Crossfit.com
+            url: http://crossfit.com
+          - title: Crossfit Asphodel
+            url: http://crossfitasphodel.com
+  - title: Doc
+    url: pages/elements.html
+button:
+  show: True
+  text: Nav Button Text
+  url: '#five'
+  fa_icon: fa-download

@@ -4,6 +4,7 @@
 	<h1 id="logo"><a href="{{ site.url }}{{ site.baseurl }}/index.html">{{site.menu_topright_title}}</a></h1>
 	<nav id="nav">
 		<ul>
+			{% comment %}
 			<li><a href="{{ site.url }}{{ site.baseurl }}/index.html">Home</a></li>
       <li><a href="{{ site.url }}{{ site.baseurl }}/pages/blog.html">Blog</a></li>
 			<li>
@@ -24,7 +25,47 @@
 				</ul>
 			</li>
 			<li><a href="{{ site.url }}{{ site.baseurl }}/pages/elements.html">Docs</a></li>
-			<li><a href="{{ site.baseurl }}{{ site.url}}/#" class="button special icon fa-download">Download</a></li>
+			{% endcomment %}
+
+			{% for link in site.data.nav.menu %}
+				{% capture link_url %}{{ site.url }}{{ site.baseurl }}{{link.url}} {% endcapture %}
+        {% if link_url contains 'http' %}{% assign link_url = link.url %}{% endif %}
+				<li><a href="{{link_url}}">{{ link.title}}</a>
+
+				{% if link.dropdown %}
+					<!-- First level dropdown -->
+					<ul>
+						{% for alink in link.dropdown %}
+							{% capture alink_url %}{{ site.url }}{{ site.baseurl }}{{alink.url}} {% endcapture %}
+			        {% if alink_url contains 'http' %}{% assign alink_url = alink.url %}{% endif %}
+						<li><a href="{{alink_url}}">{{alink.title}}</a>
+
+							{% if alink.dropdown %}
+								<!-- Second level dropdown -->
+								<ul>
+									{% for blink in alink.dropdown %}
+										{% capture blink_url %}{{ site.url }}{{ site.baseurl }}{{blink.url}} {% endcapture %}
+						        {% if blink_url contains 'http' %}{% assign blink_url = blink.url %}{% endif %}
+										<li><a href="{{blink_url}}">{{blink.title}}</a></li>
+									{% endfor %}
+								</ul>
+							</li>
+							{% else %}
+						</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</li>
+				{% else %}
+					</li>
+				{% endif %}
+			{% endfor %}
+
+			{% if site.data.nav.button.show %}
+			{% capture button_url %} {{ site.url }}{{ site.baseurl }}/{{site.data.nav.button.url}} {% endcapture %}
+			{% if button_url contains 'http' %}{% assign button_url = site.data.nav.button.url %}{% endif %}
+			<li><a href="{{ button_url }}" class="button special icon {{site.data.nav.button.fa_icon}}">{{ site.data.nav.button.text }}</a></li>
+			{% endif %}
 		</ul>
 	</nav>
 </header>
