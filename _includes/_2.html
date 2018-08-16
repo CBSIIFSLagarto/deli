@@ -1,16 +1,20 @@
 
 <!-- Two -->
   <section id="two" class="spotlight style2 right">
-    <span class="image fit main"><img src="{{ site.url }}{{ site.baseurl }}/images/pic03.jpg" alt="" /></span>
+    <span class="image fit main"><img src="{{ site.url }}{{ site.baseurl }}{{ site.data.section2.bg_url }}" alt="" /></span>
     <div class="content">
       <header>
-        <h2>Interdum amet non magna accumsan</h2>
-        <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+        <h2>{{ site.data.section2.header }}</h2>
+        <p>{{ site.data.section2.tagline }}</p>
       </header>
-      <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+      <p>{{ site.data.section2.para }}</p>
+      {% if site.data.section2.button.show %}
       <ul class="actions">
-        <li><a href="{{ site.url }}{{ site.baseurl }}/#" class="button">Learn More</a></li>
+        {% capture button_url %} {{ site.url }}{{ site.baseurl }}/{{site.data.section2.button.url}} {% endcapture %}
+        {% if button_url contains 'http' %}{% assign button_url = site.data.section2.button.url %}{% endif %}
+        <li><a href="{{ button_url }}" class="button">{{ site.data.section2.button.text }}</a></li>
       </ul>
+      {% endif %}
     </div>
     <a href="#three" class="goto-next scrolly">Next</a>
   </section>

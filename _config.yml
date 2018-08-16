@@ -14,6 +14,7 @@ github_username:  crossfitasphodel
 
 # Template Text
 menu_topright_title: '' #'Asphodeli'
+logo_url: '/images/logo_color.png'
 copyright: '&copy; Untitled. All rights reserved.'
 designby: '<a href="http://html5up.net">HTML5 UP</a>'
 
