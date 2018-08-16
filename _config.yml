@@ -13,6 +13,7 @@ twitter_username: #uclatommy
 github_username:  crossfitasphodel
 
 # Template Text
+menu_topright_title: '' #'Asphodeli'
 copyright: '&copy; Untitled. All rights reserved.'
 designby: '<a href="http://html5up.net">HTML5 UP</a>'
 
