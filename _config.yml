@@ -1,14 +1,20 @@
 # Site settings
-title: Landed
-email: tkchen@gmail.com
+title: Asphodeli
+email: ''
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: '/deli/'
+baseurl: '/deli_landed/'
 url: ''
-twitter_username: uclatommy
-github_username:  uclatommy
+
+# Social media
+twitter_username: #uclatommy
+github_username:  crossfitasphodel
+
+# Template Text
+copyright: '&copy; Untitled. All rights reserved.'
+designby: '<a href="http://html5up.net">HTML5 UP</a>'
 
 # Build settings
 markdown: kramdown
