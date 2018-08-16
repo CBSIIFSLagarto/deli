@@ -15,8 +15,8 @@ github_username:  crossfitasphodel
 # Template Text
 menu_topright_title: '' #'Asphodeli'
 logo_url: '/images/logo_white.png'
-copyright: '&copy; Untitled. All rights reserved.'
-designby: '<a href="http://html5up.net">HTML5 UP</a>'
+copyright: '&copy; Made by Asphodel. All rights reserved.'
+designby: 'with &hearts; by <a href="http://instagram.com/johnho.ca/">JHO</a>'
 
 # Build settings
 markdown: kramdown
