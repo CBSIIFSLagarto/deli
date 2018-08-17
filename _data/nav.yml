@@ -3,13 +3,13 @@ menu:
     url: index.html
     show: True
   - title: About Us
-    url:
+    url: index.html#aboutus
     show: True
   - title: Menu
-    url:
+    url: index.html#menu
     show: True
   - title: Space
-    url:
+    url: index.html#space
     show: True
   - title: Blog
     url: pages/blog.html
@@ -34,6 +34,15 @@ menu:
   - title: Doc
     show: False
     url: pages/elements.html
+social:
+  show: True
+  list:
+    - title: Instagram
+      url: http://instagram.com/asphodeli.hk
+      fa: fa-instagram
+    - title: Facebook
+      url: http://facebook.com/asphodeli.hk
+      fa: fa-facebook
 button:
   show: False
   text: Nav Button Text
