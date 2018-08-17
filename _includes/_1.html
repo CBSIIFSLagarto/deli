@@ -5,20 +5,26 @@
     <div class="content">
       <div class="container">
         <div class="row">
-          <div class="4u 12u$(medium)">
+          {% capture strHeader %}{{site.data.section1.header}}{% endcapture %}
+          {% capture strTagline %}{{site.data.section1.tagline}}{% endcapture %}
+          {% assign colsize = '6u' %}
+          {% if strHeader != '' or strTagline !='' %}
+            {% assign colsize = '4u' %}
+          <div class="{{colsize}} 12u$(medium)">
             <header>
-              <h2>{{ site.data.section1.header }}</h2>
-              <p>{{ site.data.section1.tagline }}</p>
+              <h2>{{strHeader}}</h2>
+              <p>{{strTagline}}</p>
             </header>
           </div>
-          <div class="4u 12u$(medium)">
+          {% endif %}
+          <div class="{{colsize}} 12u$(medium)">
             <p>{{ site.data.section1.para_left }}</p>
           </div>
-          <div class="4u$ 12u$(medium)">
+          <div class="{{colsize}} 12u$(medium)">
             <p>{{ site.data.section1.para_right }}</p>
           </div>
         </div>
       </div>
     </div>
-    <a href="#two" class="goto-next scrolly">Next</a>
+    <a href="#aboutus" class="goto-next scrolly">Next</a>
   </section>

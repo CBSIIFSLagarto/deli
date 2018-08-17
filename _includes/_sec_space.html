@@ -1,0 +1,20 @@
+
+<!-- Space section -->
+  <section id="space" class="spotlight style2 right">
+    <span class="image fit main"><img src="{{ site.url }}{{ site.baseurl }}{{ site.data.section_space.bg_url }}" alt="" /></span>
+    <div class="content">
+      <header>
+        <h2>{{ site.data.section_space.header }}</h2>
+        <p>{{ site.data.section_space.tagline }}</p>
+      </header>
+      <p>{{ site.data.section_space.para }}</p>
+      {% if site.data.section_space.button.show %}
+      <ul class="actions">
+        {% capture button_url %} {{ site.url }}{{ site.baseurl }}/{{site.data.section_space.button.url}} {% endcapture %}
+        {% if button_url contains 'http' %}{% assign button_url = site.data.section_space.button.url %}{% endif %}
+        <li><a href="{{ button_url }}" class="button">{{ site.data.section_space.button.text }}</a></li>
+      </ul>
+      {% endif %}
+    </div>
+    <a href="#five" class="goto-next scrolly">Next</a>
+  </section>

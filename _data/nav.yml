@@ -1,10 +1,22 @@
 menu:
   - title: Home
     url: index.html
+    show: True
+  - title: About Us
+    url:
+    show: True
+  - title: Menu
+    url:
+    show: True
+  - title: Space
+    url:
+    show: True
   - title: Blog
     url: pages/blog.html
+    show: False
   - title: Layouts
     url:
+    show: False
     dropdown:
       - title: Left Sidebar
         url: pages/left-sidebar.html
@@ -20,9 +32,10 @@ menu:
           - title: Crossfit Asphodel
             url: http://crossfitasphodel.com
   - title: Doc
+    show: False
     url: pages/elements.html
 button:
-  show: True
+  show: False
   text: Nav Button Text
   url: '#five'
   fa_icon: fa-download

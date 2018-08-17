@@ -1,0 +1,8 @@
+bg_url: /images/photo02.jpg
+header: About Us
+tagline: tagline for section two
+para: "Our roots come from fitness: CrossFit Asphodel (located next door) has been our way of sharing our passion for helping Hong Kong get fit since 2010. Fitness, however, is only half of the story. We are excited to bring a cozy, family-friendly, eatery offering nutritious food and drinks to fuel your active lifestyle. We’re even more excited to announce our partnership with Grassrootspantry to help make this all happen. You are what you eat...so you better eat well."
+button:
+  show: False
+  url: pages/blog.html
+  text: Checkout our Menu

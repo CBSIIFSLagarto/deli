@@ -1,8 +1,0 @@
-bg_url: /images/photo02.jpg
-header: Section Two Header
-tagline: tagline for section two
-para: Here's some text for the only paragraph
-button:
-  show: True
-  url: pages/blog.html
-  text: Section 2 Button

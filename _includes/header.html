@@ -27,37 +27,42 @@
 			<li><a href="{{ site.url }}{{ site.baseurl }}/pages/elements.html">Docs</a></li>
 			{% endcomment %}
 
+
 			{% for link in site.data.nav.menu %}
-				{% capture link_url %}{{ site.url }}{{ site.baseurl }}{{link.url}} {% endcapture %}
-        {% if link_url contains 'http' %}{% assign link_url = link.url %}{% endif %}
-				<li><a href="{{link_url}}">{{ link.title}}</a>
+				{% if link.show %}
+					{% capture link_url %}{{ site.url }}{{ site.baseurl }}{{link.url}} {% endcapture %}
+	        {% if link_url contains 'http' %}{% assign link_url = link.url %}{% endif %}
+					<li><a href="{{link_url}}">{{ link.title}}</a>
 
-				{% if link.dropdown %}
-					<!-- First level dropdown -->
-					<ul>
-						{% for alink in link.dropdown %}
-							{% capture alink_url %}{{ site.url }}{{ site.baseurl }}{{alink.url}} {% endcapture %}
-			        {% if alink_url contains 'http' %}{% assign alink_url = alink.url %}{% endif %}
-						<li><a href="{{alink_url}}">{{alink.title}}</a>
+					{% if link.dropdown %}
+						<!-- First level dropdown -->
+						<ul>
+							{% for alink in link.dropdown %}
+								{% capture alink_url %}{{ site.url }}{{ site.baseurl }}{{alink.url}} {% endcapture %}
+				        {% if alink_url contains 'http' %}{% assign alink_url = alink.url %}{% endif %}
+							<li><a href="{{alink_url}}">{{alink.title}}</a>
 
-							{% if alink.dropdown %}
-								<!-- Second level dropdown -->
-								<ul>
-									{% for blink in alink.dropdown %}
-										{% capture blink_url %}{{ site.url }}{{ site.baseurl }}{{blink.url}} {% endcapture %}
-						        {% if blink_url contains 'http' %}{% assign blink_url = blink.url %}{% endif %}
-										<li><a href="{{blink_url}}">{{blink.title}}</a></li>
-									{% endfor %}
-								</ul>
+								{% if alink.dropdown %}
+									<!-- Second level dropdown -->
+									<ul>
+										{% for blink in alink.dropdown %}
+											{% capture blink_url %}{{ site.url }}{{ site.baseurl }}{{blink.url}} {% endcapture %}
+							        {% if blink_url contains 'http' %}{% assign blink_url = blink.url %}{% endif %}
+											<li><a href="{{blink_url}}">{{blink.title}}</a></li>
+										{% endfor %}
+									</ul>
+								</li>
+								{% else %}
 							</li>
-							{% else %}
-						</li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</li>
-				{% else %}
+								{% endif %}
+							{% endfor %}
+						</ul>
 					</li>
+					{% else %}
+					</li>
+					{% endif %}
+				{% else %}
+					<!-- Write no links -->
 				{% endif %}
 			{% endfor %}
 

@@ -1,0 +1,8 @@
+bg_url: /images/photo02.jpg
+header: Space
+tagline: tagline for our awesome Space
+para: Link to our address
+button:
+  show: False
+  url: pages/blog.html
+  text: Checkout our Menu
