@@ -15,8 +15,8 @@ github_username:  crossfitasphodel
 # Template Text
 menu_topright_title: '' #'Asphodeli'
 logo_url: '/images/logo_white.png'
-copyright: '&copy; Made by Asphodel. All rights reserved.'
-designby: 'with &hearts; by <a href="http://instagram.com/johnho.ca/">JHO</a>'
+copyright: '<i class="fa fa-map-marker"></i> 22 Praya, Kennedy Town <i class="fa fa-mobile"></i> +852 2467 1838 <i class="fa fa-envelope-o"></i> deli@crossfitasphodel.com' #'&copy; Made by Asphodel. All rights reserved.'
+designby: '<a href="">Tom Panerai</a> Photo: <a href="">Peter Pan</a> Web: <a href="http://instagram.com/johnho.ca/">JHO</a>'
 
 # Build settings
 markdown: kramdown

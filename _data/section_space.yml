@@ -1,7 +1,7 @@
-bg_url: /images/photo02.jpg
-header: Space
-tagline: tagline for our awesome Space
-para: Link to our address
+bg_url: /images/photo04.jpg
+header: #Space
+tagline: #tagline for our awesome Space
+para: '<i class="fa fa-map-marker"></i> 22 Praya, Kennedy Town <br/> <i class="fa fa-mobile"></i> +852 2467 1838 <br/><i class="fa fa-envelope-o"></i> deli@crossfitasphodel.com'
 button:
   show: False
   url: pages/blog.html

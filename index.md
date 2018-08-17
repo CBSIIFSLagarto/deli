@@ -6,7 +6,7 @@ layout: default
       {% comment %}{% include _banner.html %}{% endcomment %}
       {% include _banner_basic.html %}
 
- 			{% include _1.html %}
+ 			{% include _sec_intro.html %}
 
 			{% include _sec_aboutus.html %}
 			{% include _pic1.html %}
@@ -16,7 +16,7 @@ layout: default
 
       {% comment %}{% include _4.html %}{% endcomment %}
       {% include _sec_space.html %}
-      
+
 			{% include _5.html %}
 
 			{% include footer.html %}

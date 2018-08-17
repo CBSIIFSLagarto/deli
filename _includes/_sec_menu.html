@@ -12,7 +12,8 @@
       <ul class="actions">
         {% capture button_url %} {{ site.url }}{{ site.baseurl }}/{{site.data.section_menu.button.url}} {% endcapture %}
         {% if button_url contains 'http' %}{% assign button_url = site.data.section_menu.button.url %}{% endif %}
-        <li><a href="{{ button_url }}" class="button">{{ site.data.section_menu.button.text }}</a></li>
+        {% capture button_fa %}{% endcapture %}
+        <li><a href="{{ button_url }}" class="button special icon fa-cutlery">{{ site.data.section_menu.button.text }}</a></li>
       </ul>
       {% endif %}
     </div>

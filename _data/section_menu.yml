@@ -1,8 +1,9 @@
 bg_url: /images/photo03.jpg
-header: Section Three Header
-tagline: tagline for section Three
-para: Here's some text for the only paragraph
+header: #Section Three Header
+tagline: #tagline for section Three
+para: All our food is free from Gluten, Milk/ Diary Products and Refined Sugar
 button:
   show: True
-  url: http://crossfitasphodel.com
+  fa: fa-cutlery
+  url: files/menu_food_drink.pdf
   text: Checkout our Menu
