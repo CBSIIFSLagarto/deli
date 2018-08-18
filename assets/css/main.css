@@ -2148,6 +2148,10 @@
 		margin: 4em 0 0 0;
 	}
 
+	.text_center {
+		text-align: center;
+	}
+
 /* Form */
 
 	form {
@@ -3347,6 +3351,7 @@
 		background: transparent;
 		box-shadow: none;
 		position: absolute;
+		color: black;					/* tpanerai */
 	}
 
 	body.landing #header.sticky{
