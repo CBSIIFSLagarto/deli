@@ -3349,6 +3349,12 @@
 		position: absolute;
 	}
 
+	body.landing #header.sticky{
+		/* for sticky top menu */
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
 /* Banner */
 
 	#banner {

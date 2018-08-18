@@ -13,10 +13,11 @@ twitter_username: #uclatommy
 github_username:  crossfitasphodel
 
 # Template Text
+menu_sticky: False
 menu_topright_title: '' #'Asphodeli'
 logo_url: '/images/logo_white.png'
-copyright: '<i class="fa fa-map-marker"></i> 22 Praya, Kennedy Town <i class="fa fa-mobile"></i> +852 2467 1838 <i class="fa fa-envelope-o"></i> deli@crossfitasphodel.com' #'&copy; Made by Asphodel. All rights reserved.'
-designby: '<a href="">Tom Panerai</a> Photo: <a href="">Peter Pan</a> Web: <a href="http://instagram.com/johnho.ca/">JHO</a>'
+copyright: '<a href="https://goo.gl/maps/34suTJsRJfy" target="_blank"><i class="fa fa-map-marker"></i> 22 Praya, Kennedy Town</a> &#9702; <i class="fa fa-mobile"></i> +852 2467 1838 <a href="emailto:deli@crossfitasphodel.com"> &#9702; <i class="fa fa-envelope-o"></i> deli@crossfitasphodel.com</a>' #'&copy; Made by Asphodel. All rights reserved.'
+designby: '<a href="https://www.instagram.com/onetomphoto/" target="_blank">ONETOM</a> &#9702; Photo: <a href="https://www.instagram.com/pape_photo/" target="_blank">PAPE_PHOTO</a> &#9702; Web: <a href="http://instagram.com/johnho.ca/" target="_blank">JHO</a>'
 
 # Build settings
 markdown: kramdown
