@@ -3529,7 +3529,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 		#footer .copyright {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 0.8em;
-			line-height: 1em;
+			line-height: 2em; /*1em;*/
 			margin: 2em 0 0 0;
 			padding: 0;
 			text-align: center;
@@ -3636,14 +3636,22 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 				.spotlight .image.main {
 					display: block;
 					margin: 0;
-					max-height: 40vh;
+					max-height: 100%; /*40vh;*/
 					overflow: hidden;
 				}
+
+        .spotlight .image.fit img{
+          height: 100vh;
+          /*width: auto;*/
+          object-fit: cover;
+        }
 
 				.spotlight .content {
 					background-color: #1c1d26;
 					border-width: 0 !important;
-					border-top-width: 0.35em !important;
+					/* remove by tpanerai
+          border-top-width: 0.35em !important;
+          */
 					bottom: auto !important;
 					left: auto !important;
 					padding: 4.5em 2.5em 2.5em 2.5em !important;
@@ -3654,8 +3662,15 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 					width: 100% !important;
 				}
 
-				.spotlight .goto-next , .spotlight .goto-top {
-					display: none;
+				.spotlight .goto-next {
+
+        }
+
+        .spotlight .goto-top {
+          /* we want to have scrolly in mobile
+          display: none;
+          */
+          top: 2.5%;
 				}
 
 		/* Wrapper */
@@ -3753,7 +3768,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 
 		/* Goto Next */
 
-			.goto-next:before {
+			.goto-next:before , .goto-top:before {
 				height: 0.8em;
 				margin: -0.4em 0 0 -0.6em;
 				width: 1.2em;
@@ -3766,11 +3781,22 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 			}
 
 				.spotlight .image.main {
-					max-height: 60vh;
+					max-height: 100%;
+          max-width: 100%;
+          height: auto;
 				}
 
+        /* this set the images to viewport height */
+        .spotlight .image.fit img{
+          height: 100vh;
+          /*width: auto;*/
+          object-fit: cover;
+        }
+
 				.spotlight .content {
-					border-top-width: 0.2em !important;
+					/* remove by tpanerai
+          border-top-width: 0.2em !important;
+          */
 					padding: 3.25em 1.5em 1.25em 1.5em !important;
 				}
 
@@ -3880,7 +3906,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65;
+						background: /*borange*/#E85E3A; /*#e44c65;*/
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;
@@ -3915,7 +3941,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #181920;
+				background: /*bgreen*/#2E3B1C ;/*#181920;*/
 				padding: 0.75em 1.25em;
 			}
 
