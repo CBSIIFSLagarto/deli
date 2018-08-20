@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: '/deli_landed/'
 url: ''
 
-# Social media
+# Social media -- NOT USED --
 twitter_username: #uclatommy
 github_username:  crossfitasphodel
 
