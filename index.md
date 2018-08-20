@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-      {% include header.html %}
+      {% include header_fast.html %}
+      {% comment %} the generateion of navPanel (the mobile hamburger menu) ran faster than
+                    the actual nav generation in header; so we are using header_fast.html
+        {% include header.html %}
+      {% endcomment %}
 
       {% comment %}{% include _banner.html %}{% endcomment %}
       {% include _banner_basic.html %}
