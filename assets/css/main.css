@@ -1,10 +1,10 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Choplin:100,300,100italic,300italic");
 /*
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 */
 
+/* Brand Font */
 @font-face {
     font-family: 'choplin';
     src: url('choplin/choplin-medium-demo-webfont.woff2') format('woff2'),
@@ -23,6 +23,11 @@
 
 }
 
+/* Brand Color
+************** Comment **************** Color ********************
+Brand Orange- for links				borange		#E85E3A
+Brand Green-	for buttons			bgreen		#2E3B1C
+*/
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -1601,12 +1606,12 @@
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #e44c65;
+		color: /*borange*/#E85E3A; /*#e44c65;*/
 		text-decoration: none;
 	}
 
 		a:hover {
-			color: #e44c65 !important;
+			color: /*borange*/#E85E3A /*#e44c65*/ !important;
 			border-bottom-color: transparent;
 		}
 
@@ -2761,7 +2766,7 @@
 		.button:hover,
 		.button:active {
 			box-shadow: inset 0 0 0 1px #e44c65;
-			color: #e44c65 !important;
+			color: /*borange*/#E85E3A /*#e44c65*/ !important;
 		}
 
 		input[type="submit"]:active,
@@ -2805,7 +2810,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #e44c65;
+			background-color: /*bgreen*/#2E3B1C; /*#e44c65;*/
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2814,7 +2819,7 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #e76278;
+				background-color: /*borange*/#E85E3A /*#e76278*/;
 			}
 
 			input[type="submit"].special:active,
@@ -2990,7 +2995,7 @@
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(23, 24, 32, 0.95);
+			background: /*rgba(23, 24, 32, 0.95)*/ rgba(0,0,0,0.75);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3024,7 +3029,7 @@
 		}
 
 		.spotlight.bottom .content {
-			border-top-width: 0.35em;
+			border-top-width: /*remove by tpanerai*/0 /* 0.35em */;
 			bottom: 0;
 		}
 
@@ -3036,12 +3041,12 @@
 		}
 
 		.spotlight.left .content {
-			border-right-width: 0.35em;
+			border-right-width: /*remove by tpanerai*/0 /* 0.35em */;
 			left: 0;
 		}
 
 		.spotlight.right .content {
-			border-left-width: 0.35em;
+			border-left-width: /*remove by tpanerai*/0 /* 0.35em */;
 			right: 0;
 		}
 
@@ -3114,7 +3119,7 @@
 
 
 		.wrapper.style2 {
-			background: #e44c65;
+			background: /*borange*/#E85E3A; /*#e44c65;*/
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
