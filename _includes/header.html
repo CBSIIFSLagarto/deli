@@ -44,8 +44,7 @@
 
 			{% if site.data.nav.social.show %}
 			{% for social in site.data.nav.social.list %}
-			<li><a href="{{social.url}}"><i class="fa {{social.fa}}"></i></a></li>
-			{% comment %}<li><a href="{{social.url}}" class="icon alt {{social.fa}}"><span class="label">{{social.title}}</span></a></li>{% endcomment %}
+			<li><a href="{{social.url}}" title="{{social.title}}"><i class="fa {{social.fa}}"></i></a></li>
 			{% endfor %}
 			{% endif %}
 

@@ -2843,7 +2843,9 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 			opacity: 0.25;
 		}
 
-/* Goto Next */
+/* Goto Next
+	and Goto Top added by JHO
+*/
 
 	.goto-next {
 		border: 0;
@@ -2875,6 +2877,37 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 			width: 2em;
 			z-index: 1;
 		}
+
+	.goto-top {
+		border: 0;
+		top: 0;
+		display: block;
+		height: 5em;
+		left: 50%;
+		margin: 0 0 0 -5em;
+		overflow: hidden;
+		position: absolute;
+		text-indent: 10em;
+		white-space: nowrap;
+		width: 10em;
+		z-index: 1;
+	}
+		.goto-top:before {
+			background-image: url("images/arrow_up.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: '';
+			display: block;
+			height: 1.5em;
+			left: 50%;
+			margin: -0.75em 0 0 -1em;
+			position: absolute;
+			top: 50%;
+			width: 2em;
+			z-index: 1;
+		}
+
 
 /* Spotlight */
 
@@ -3002,7 +3035,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 			position: absolute;
 		}
 
-		.spotlight .goto-next {
+		.spotlight .goto-next , .spotlight .goto-top {
 			-moz-transform: translate(0,0);
 			-webkit-transform: translate(0,0);
 			-ms-transform: translate(0,0);
@@ -3067,7 +3100,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 			opacity: 0;
 		}
 
-		.spotlight.inactive .goto-next {
+		.spotlight.inactive .goto-next , .spotlight.inactive .goto-top {
 			-moz-transform: translate(0,1.5em);
 			-webkit-transform: translate(0,1.5em);
 			-ms-transform: translate(0,1.5em);
@@ -3621,7 +3654,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 					width: 100% !important;
 				}
 
-				.spotlight .goto-next {
+				.spotlight .goto-next , .spotlight .goto-top {
 					display: none;
 				}
 
@@ -3637,7 +3670,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 				background-attachment: scroll;
 			}
 
-				#banner .goto-next {
+				#banner .goto-next , #banner .goto-top {
 					height: 7em;
 				}
 

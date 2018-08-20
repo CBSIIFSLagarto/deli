@@ -3,7 +3,7 @@
 <footer id="footer">
 	<ul class="icons">
 		{% for social in site.data.social %}
-		<li><a href="{{social.url}}" class="icon alt {{social.fa}}"><span class="label">{{social.title}}</span></a></li>
+		<li><a href="{{social.url}}" class="icon alt {{social.fa}}" title="{{social.title}}"><span class="label">{{social.title}}</span></a></li>
 		{% endfor %}
 
 	</ul>
