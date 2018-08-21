@@ -84,7 +84,20 @@
 						target: $body,
 						visibleClass: 'navPanel-visible'
 					});
-
+		/*
+			JHO try to just add the event listeners
+			
+			$('navPanel').panel({
+				delay: 500,
+				hideOnClick: true,
+				hideOnSwipe: true,
+				resetScroll: true,
+				resetForms: true,
+				side: 'left',
+				target: $body,
+				visibleClass: 'navPanel-visible'
+			});
+		*/
 			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#titleBar, #navPanel, #page-wrapper')

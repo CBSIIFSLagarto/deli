@@ -2172,9 +2172,16 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 		margin: 4em 0 0 0;
 	}
 
-	.text_center {
-		text-align: center;
+  /* JHO addition */
+  .text_center{
+    text-align: center;
+  }
+  .text_left {
+		text-align: left;
 	}
+  .text_right {
+    text-align: right;
+  }
 
 /* Form */
 
@@ -3412,6 +3419,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
     /* tpanerai */
 		color: #000000;
     font-family: choplin;
+    font-weight: bold;
 	}
 
 	body.landing #header.sticky{
@@ -3712,6 +3720,11 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 				padding: 4.5em 0;
 			}
 
+    /* JHO Additions */
+    .text_left , .text_right{
+      text-align: center;
+    }
+
 	}
 
 /* Small */
@@ -3922,15 +3935,18 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 						width: 54px;
 					}
 
+/***** NavPanel settings (search replace)
+  np_width  15Opx        (originally 275px)
+*****/            
 			#navPanel {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transform: translateX(-275px);
-				-webkit-transform: translateX(-275px);
-				-ms-transform: translateX(-275px);
-				transform: translateX(-275px);
+				-moz-transform: translateX(-150px); /*-275px*/
+				-webkit-transform: translateX(-150px);
+				-ms-transform: translateX(-150px);
+				transform: translateX(-150px);
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -3941,7 +3957,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 275px;
+				width: 150px; /*275px;*/
 				z-index: 10002;
 				background: /*borange*/#E85E3A; /*bgreen#2E3B1C ;/*#181920;*/
 				padding: 0.75em 1.25em;
@@ -3996,17 +4012,17 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 					}
 
 			body.navPanel-visible #page-wrapper {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(150px); /*275px*/
+				-webkit-transform: translateX(150px);
+				-ms-transform: translateX(150px);
+				transform: translateX(150px);
 			}
 
 			body.navPanel-visible #titleBar {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(150px);
+				-webkit-transform: translateX(150px);
+				-ms-transform: translateX(150px);
+				transform: translateX(/*np_width*/150px);
 			}
 
 			body.navPanel-visible #navPanel {

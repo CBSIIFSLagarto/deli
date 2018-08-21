@@ -1,0 +1,47 @@
+
+<!--nav menu for mobile devices-->
+<div id="titleBar">
+		<a class="toggle" href="#navPanel"></a>
+		<span class="title">
+			<a href="{{ site.url }}{{ site.baseurl }}/index.html">{{site.menu_topright_title}}</a>
+		</span>
+</div>
+
+<div id="navPanel">
+	<nav>
+		{% for link in site.data.nav.menu %}
+			{% if link.show %}
+				{% capture link_url %}{{ site.url }}{{ site.baseurl }}{{link.url}} {% endcapture %}
+        {% if link_url contains 'http' %}{% assign link_url = link.url %}{% endif %}
+				<a class="link depth-0" href="{{link_url}}"><span class="indent-0"></span>{{ link.title}}</a>
+
+				{% if link.dropdown %}
+					<!-- First level dropdown -->
+						{% for alink in link.dropdown %}
+							{% capture alink_url %}{{ site.url }}{{ site.baseurl }}{{alink.url}} {% endcapture %}
+			        {% if alink_url contains 'http' %}{% assign alink_url = alink.url %}{% endif %}
+						<a class="link depth-1" href="{{alink_url}}"><span class="indent-1"></span>{{alink.title}}</a>
+
+							{% if alink.dropdown %}
+								<!-- Second level dropdown -->
+									{% for blink in alink.dropdown %}
+										{% capture blink_url %}{{ site.url }}{{ site.baseurl }}{{blink.url}} {% endcapture %}
+						        {% if blink_url contains 'http' %}{% assign blink_url = blink.url %}{% endif %}
+										<a class="link depth-2" href="{{blink_url}}"><span class="indent-2"></span>{{blink.title}}</a>
+									{% endfor %}
+							{% endif %}
+						{% endfor %}
+				{% endif %}
+			{% else %}
+				<!-- Write no links -->
+			{% endif %}
+		{% endfor %}
+
+		{% if site.data.nav.social.show %}
+		{% for social in site.data.nav.social.list %}
+		<a class="link depth-0" href="{{social.url}}"><span class="indent-0"></span><i class="fa {{social.fa}}"></i></a>
+		{% endfor %}
+		{% endif %}
+
+	</nav>
+</div>
