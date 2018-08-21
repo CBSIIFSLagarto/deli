@@ -3636,6 +3636,13 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 				font-size: 12pt;
 			}
 
+      /* Hide for Small
+          by JHO
+      */
+        .hide-for-small {
+          display: none;
+        }
+
 		/* Spotlight */
 
 			.spotlight {
@@ -3937,7 +3944,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 
 /***** NavPanel settings (search replace)
   np_width  15Opx        (originally 275px)
-*****/            
+*****/
 			#navPanel {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
