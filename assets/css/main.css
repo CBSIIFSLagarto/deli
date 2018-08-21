@@ -3638,8 +3638,9 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 
       /* Hide for Small
           by JHO
+          needed more Specificity to hide
       */
-        .hide-for-small {
+        .hide-for-small, #intro .hide-for-small {
           display: none;
         }
 
