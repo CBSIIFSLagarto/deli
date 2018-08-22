@@ -10,7 +10,7 @@ layout: default
       {% endcomment %}
 
       {% comment %}{% include _banner.html %}{% endcomment %}
-      {% include _banner_basic.html %}
+      {% comment %}{% include _banner_basic.html %}{% endcomment %}
 
  			{% include _sec_intro.html %}
 

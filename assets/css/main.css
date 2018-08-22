@@ -3060,7 +3060,10 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 
 		.spotlight.top .content, .spotlight.bottom .content {
 			left: 0;
-			padding: 5.1em 0 3.1em 0;
+			/* JHO edit
+      padding: 5.1em 0 3.1em 0;
+      */
+      padding: 1.5em 0 1.5em 0;
 			width: 100%;
 		}
 
@@ -3681,14 +3684,14 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 				}
 
 				.spotlight .goto-next {
-
+          bottom: -1.5%;
         }
 
         .spotlight .goto-top {
           /* we want to have scrolly in mobile
           display: none;
           */
-          top: 2.5%;
+          top: 2%;
 				}
 
 		/* Wrapper */
