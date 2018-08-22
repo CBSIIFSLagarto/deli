@@ -15,10 +15,10 @@ layout: default
  			{% include _sec_intro.html %}
 
 			{% include _sec_aboutus.html %}
-			{% include _pic1.html %}
+			{% comment %}{% include _pic1.html %}{% endcomment %}
 
       {% include _sec_menu.html %}
-      {% include _pic2.html %}
+      {% comment %}{% include _pic2.html %}{% endcomment %}
 
       {% comment %}{% include _4.html %}{% endcomment %}
       {% include _sec_space.html %}

@@ -2817,7 +2817,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: /*bgreen*/#2E3B1C; /*#e44c65;*/
+			background-color: /*borange*/#E85E3A; /*#e44c65;*/
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2826,7 +2826,7 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: /*borange*/#E85E3A /*#e76278*/;
+				background-color:  /*bgreen*/#2E3B1C/*#e76278*/;
 			}
 
 			input[type="submit"].special:active,
