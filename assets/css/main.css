@@ -2127,6 +2127,18 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 		text-align: center;
 	}
 
+  /* JHO addition */
+  #five a{
+      color: #ffffff;
+  }
+  #five .icons a{
+    border-bottom-color: transparent;
+  }
+  #five a:hover {
+    color: /*bgreen*/#2E3B1C !important;
+    border-bottom-color: transparent;
+  }
+
 	header p {
 		color: #ffffff;
 		position: relative;
@@ -3164,6 +3176,8 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 
 		.wrapper.style2 {
 			background: /*borange*/#E85E3A; /*#e44c65;*/
+      /* JHO addition */
+      padding: 3em 0 .1em 0;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3517,7 +3531,9 @@ Brand Green-	for buttons			bgreen		#2E3B1C
 
 	#footer {
 		background: #272833;
-		padding: 6em 0;
+		/*padding: 6em 0;*/
+    /* JHO Edit */
+    padding: 2em 0;
 		text-align: center;
 	}
 

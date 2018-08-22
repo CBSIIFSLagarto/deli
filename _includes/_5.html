@@ -6,10 +6,18 @@
         <h2>{{ site.data.section5.header }}</h2>
         <p>{{ site.data.section5.tagline }}</p>
       </header>
+
+      <ul class="icons">
+        {% for social in site.data.nav.social.list %}
+        <li><a href="{{social.url}}" title="{{social.title}}" target="_blank"><i class="fa {{social.fa}} fa-2x"></i></a></li>
+        {% endfor %}
+
+      </ul>
+
       <form method="post" action="#" class="container 50%">
         <div class="row uniform 50%">
-          <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-          <div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
+          <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="{{site.data.section5.form_placeholder}}" /></div>
+          <div class="4u$ 12u$(xsmall)"><input type="submit" value="{{site.data.section5.button_text}}" class="fit special" /></div>
         </div>
       </form>
     </div>

@@ -1,5 +1,7 @@
-bg_url: /images/photo01.jpg
-header: Section Five Header
-tagline: tagline for section five - Call To Action
-para_left: Here's some text for the left paragraph
-para_right: Here's some text for the right paragraph
+#bg_url: /images/photo01.jpg
+header:
+tagline: '<i class="fa fa-map-marker"></i><a href="https://goo.gl/maps/34suTJsRJfy" target="_blank"> 22 Praya, Kennedy Town</a> | <i class="fa fa-mobile"></i> +852 2467 1838 <br/><i class="fa fa-envelope-o"></i><a href="emailto:deli@crossfitasphodel.com"> deli@crossfitasphodel.com</a>'
+form_placeholder: 'Your Email Address'
+button_text: 'Newsletters'
+#para_left: Here's some text for the left paragraph
+#para_right: Here's some text for the right paragraph
