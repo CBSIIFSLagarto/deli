@@ -1,7 +1,7 @@
 bg_url: /images/photo02.jpg
 header: #About Us
 tagline: we are what we eat. <br/>so you better eat well #tagline for section two
-para: 'Our roots come from Fitness! <br/><br/><a href="http://crossfitasphodel.com/" target="_blank">CrossFit Asphodel</a> (located next door) has been our way of sharing our passion for helping Hong Kong get fit since 2010.<br/><br/> Fitness, however, is only half of the story. We are excited to bring a cozy, family-friendly, eatery offering nutritious food and drinks to fuel your active lifestyle. <br/><br/>We’re even more excited to announce our partnership with <a href="http://www.grassrootspantry.com/" target="_blank">Grassroots Pantry</a> to help make this all happen. <br/><br/>You are what you eat... so you better eat well.'
+para: 'Our roots come from Fitness! <br/><br/><a href="http://crossfitasphodel.com/" target="_blank">CrossFit Asphodel</a> (located next door) has been our way of sharing our passion for helping Hong Kong get fit since 2010.<br/><br/> Fitness, however, is only half of the story. We are excited to bring a cozy, family-friendly eatery offering nutritious food and drinks to fuel your active lifestyle. <br/><br/>We’re even more excited to announce our partnership with <a href="http://www.grassrootspantry.com/" target="_blank">Grassroots Pantry</a> to help make this all happen. <br/><br/>You are what you eat... so you better eat well.'
 button:
   show: False
   url: pages/blog.html
