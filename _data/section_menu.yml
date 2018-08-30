@@ -5,5 +5,5 @@ para: 'Asphodeli cares for each individuals body and soul by using the cleanest 
 button:
   show: True
   fa: fa-cutlery
-  url: files/menu_food_drink.pdf
+  url: files/asphodeli_menu.pdf #iles/menu_food_drink.pdf
   text: Checkout our Menu
